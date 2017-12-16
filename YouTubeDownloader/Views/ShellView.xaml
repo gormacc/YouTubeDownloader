@@ -1,0 +1,26 @@
+﻿<Window x:Class="YouTubeDownloader.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="YouTubeDownloader" Height="500" Width="700">
+    <DockPanel LastChildFill="True">
+        <Menu DockPanel.Dock="Top" IsMainMenu="True" FontSize="18">
+            <MenuItem x:Name="AddLink" Header="Wpisywanie linku"/>
+            <MenuItem x:Name="SongsList" Header="Wybór piosenek"/>
+            <MenuItem x:Name="Settings" Header="Ustawienia" IsEnabled="False"/>
+            <MenuItem x:Name="Downloading" Header="Pobierz"/>
+        </Menu>
+        <!--<StatusBar x:Name="MyStatusBar" DockPanel.Dock="Bottom" Visibility="Collapsed">
+            --><!-- moze kiedys ..... --><!--
+            <StatusBarItem>
+                <Label FontSize="18">Trwa pobieranie plików...</Label>
+            </StatusBarItem>
+            <StatusBarItem HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+                <ProgressBar x:Name="MyProgressBar"/> --><!-- Poprawic odnoszenie się do pola --><!--
+            </StatusBarItem>
+        </StatusBar>-->
+        <ContentControl DockPanel.Dock="Top" x:Name="SelectedView"/>
+    </DockPanel>
+</Window>
